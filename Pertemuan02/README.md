@@ -9,8 +9,8 @@ void main() {
   }
 }
 ```
-Output:
-<img src="../Pertemuan02/img/image.png">
+Output: <br>
+<img src="img/tugas1.png"> <br>
 
 Penjelasan :
 Kode diatas menggunakan fungsi `main()` sebagai titik awal program. Di dalamnya terdapat sebuah loop `for` yang berjalan mundur dari angka 19 hingga 10.
@@ -98,6 +98,9 @@ int? angka; // angka bisa null
 int nilai = 10; // nilai tidak bisa null
 ```
 
+Output: <br>
+<img src="img/tugas2.png"> <br>
+
 ### Late Variabel
 - Digunakan untuk menunda inisialisasi variabel non-nullable.
 - Variabel dengan modifier `late` harus diinisialisasi sebelum digunakan, tetapi tidak perlu langsung diinisialisasi saat deklarasi.
@@ -108,3 +111,6 @@ late String nama;
 nama = 'Dart';
 print(nama); // Output: Dart
 ```
+
+Output: <br>
+<img src="img/tugas3.png"> <br>
