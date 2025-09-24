@@ -341,4 +341,57 @@ Output :
 - Membantu menulis kode yang lebih **ringkas dan mudah dibaca** dibandingkan membuat list dengan loop terpisah.  
 - Cocok untuk menggabungkan nilai statis dengan hasil iterasi dalam satu list.  
 
+## Praktikum 5 : Eksperimen Tipe Data Records
+
+Langkah 1 : <br>
+
+```
+ var record = ('first', a: 2, b: true, 'last');
+  print(record);
+```
+
+Langkah 2 : <br>
+Output : <br>
+<img src="img/prak5.png"> <br><br>
+
+Langkah 3 :
+
+```
+void main() {
+  print(tukar((10, 20)));
+}
+
+(int, int) tukar((int, int) record) {
+  var (a, b) = record;
+  return (b, a);
+}
+```
+
+Output : <br>
+<img src="img/prak5-1.png"> <br><br>
+
+Langkah 4 :
+
+```
+ (String, int) mahasiswa = ('Innama Maesa Putri', 2341720235); 
+  print(mahasiswa);
+```
+
+Output : <br>
+<img src="img/prak5-2.png"> <br><br>
+
+
+Langkah 5 :
+
+```
+var mahasiswa2 = ('first', a: 2, b: true, 'last');
+
+print(mahasiswa2.$1); // Prints 'first'
+print(mahasiswa2.a); // Prints 2
+print(mahasiswa2.b); // Prints true
+print(mahasiswa2.$2); // Prints 'last'
+```
+
+Output : <br>
+<img src="img/prak5-3.png"> <br><br>
 
