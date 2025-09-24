@@ -1,8 +1,8 @@
 void main() {
   var gifts = {
     // Key:    Value
-    'first': 'partridge_innama maesa putri',
-    'second': 'turtledoves_2341720235',
+    'first': 'partridge',
+    'second': 'turtledoves',
     'fifth': 1,
   };
 
@@ -16,8 +16,16 @@ void main() {
   gifts['second'] = 'turtledoves';
   gifts['fifth'] = 'golden rings';
 
+  mhs1['name'] = 'Innama Maesa Putri';
+  mhs1['nim'] = '2341720235';
+
   var mhs2 = Map<int, String>();
   nobleGases[2] = 'helium';
   nobleGases[10] = 'neon';
   nobleGases[18] = 'argon';
+  mhs2[4] = 'Innama Maesa Putri';
+  mhs2[5] = '2341720235';
+
+  print(mhs1);
+  print(mhs2);
 }
