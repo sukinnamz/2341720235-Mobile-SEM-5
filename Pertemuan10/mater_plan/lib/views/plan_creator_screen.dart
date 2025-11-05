@@ -23,8 +23,8 @@ class _PlanCreatorScreenState extends State<PlanCreatorScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Master Plans Gilangp'),
-        backgroundColor: Colors.purple,
+        title: const Text('Master Plans Innamzz'),
+        backgroundColor: Colors.pink,
       ),
       body: Column(
         children: [

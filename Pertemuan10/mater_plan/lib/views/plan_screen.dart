@@ -38,7 +38,7 @@ class _PlanScreenState extends State<PlanScreen> {
     }
 
     return Scaffold(
-      appBar: AppBar(title: Text(plan.name), backgroundColor: Colors.purple),
+      appBar: AppBar(title: Text(plan.name), backgroundColor: Colors.pink),
       body: ValueListenableBuilder<List<Plan>>(
         valueListenable: plansNotifier,
         builder: (context, plans, child) {
@@ -62,7 +62,7 @@ class _PlanScreenState extends State<PlanScreen> {
   Widget _buildAddTaskButton(BuildContext context) {
     ValueNotifier<List<Plan>> planNotifier = PlanProvider.of(context);
     return FloatingActionButton(
-      backgroundColor: Colors.purple,
+      backgroundColor: Colors.pink,
       child: const Icon(Icons.add, color: Colors.white),
       onPressed: () {
         Plan currentPlan = plan;
@@ -104,7 +104,7 @@ class _PlanScreenState extends State<PlanScreen> {
     return ListTile(
       leading: Checkbox(
         value: task.complete,
-        activeColor: Colors.purple,
+        activeColor: Colors.pink,
         onChanged: (selected) {
           int planIndex = planNotifier.value.indexWhere(
             (p) => p.name == currentPlan.name,
@@ -125,10 +125,10 @@ class _PlanScreenState extends State<PlanScreen> {
       ),
       title: TextFormField(
         initialValue: task.description,
-        cursorColor: Colors.purple,
+        cursorColor: Colors.pink,
         decoration: const InputDecoration(
           focusedBorder: UnderlineInputBorder(
-            borderSide: BorderSide(color: Colors.purple),
+            borderSide: BorderSide(color: Colors.pink),
           ),
         ),
         onChanged: (text) {
